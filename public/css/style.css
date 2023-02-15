@@ -10,8 +10,32 @@
         background-color: rgb(246, 250, 14);
     }
 
+#bg {
+    margin-top: 200px;
+   
+}
+
+body{
+    background-image: url('/img/BG.jpg');
+}
 
 
+
+.sli{
+    width: 240px;
+    max-height:190px;
+}
+
+.vitrine{
+    width: 240;
+    height:400px;
+}
+
+
+.card-img-overlay{
+color: white;
+font-weight: 900;
+}
     @media (max-width: 767px) {
         .carousel-inner .carousel-item > div {
             display: none;
