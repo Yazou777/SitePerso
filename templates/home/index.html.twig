@@ -27,38 +27,78 @@
   </button>
 </div> #}
 
-
-
-<div class="container text-center my-3">
-    <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+<div id="bg">
+<div class="container text-center bg-white">
     <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-3">
-                        <div class="card">
+    
+ <div class="col-md-3 ">
+                        <div class="card border-0 bg-transparent" >
                             <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                <img src="{{asset('img/Smiley.png')}}" height="800px" class="img-fluid vitrine">
                             </div>
                             <div class="card-img-overlay">Slide 1</div>
                         </div>
+                    </div> 
+
+ <div class="col-md-3 ">
+                        <div class="card border-0 bg-transparent" >
+                            <div class="card-img">
+                                <img src="{{asset('img/DrCard.png')}}" class="img-fluid vitrine">
+                            </div>
+                            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                            <h5 class="card-title ">Card title</h5>
+                            </div>
+                        </div>
                     </div>
+
+<div class="card col-md-3 border-0 " style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+<div class="card col-md-3 border-0 " style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+
+        <div id="recipeCarousel" class="carousel slide" {#data-bs-ride="carousel"  cela sert a activer un défilement auto du carousel#}>
+            <div class="carousel-inner" role="listbox" >
+                <div class="carousel-item active">
+                    <div class="col-md-3">
+                        <div class="card border-0 bg-transparent" >
+                            <div class="card-img">
+                                <img src="{{asset('img/Smiley.png')}}" class="img-fluid sli">
+                            </div>
+                            <div class="card-img-overlay">Slide 1</div>
+                        </div>
+                    </div> 
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card border-0 bg-transparent" >
                             <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                <img src="{{asset('img/DrCard.png')}}" class="img-fluid sli">
                             </div>
-                            <div class="card-img-overlay">Slide 2</div>
+                            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">Slide 2</div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card border-0 bg-transparent" >
                             <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid sli">
                             </div>
                             <div class="card-img-overlay">Slide 3</div>
                         </div>
@@ -66,9 +106,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card border-0 bg-transparent" >
                             <div class="card-img">
-                                <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                <img src="//via.placeholder.com/500x400?text=4" class="img-fluid sli">
                             </div>
                             <div class="card-img-overlay">Slide 4</div>
                         </div>
@@ -76,9 +116,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                       <div class="card border-0 bg-transparent" >
+                            <div class="card-img" >
+                                <img src="{{asset('img/Watchmen_Smiley.svg.png')}}" class="img-fluid sli"  >
                             </div>
                             <div class="card-img-overlay">Slide 5</div>
                         </div>
@@ -86,9 +126,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card border-0 bg-transparent" >
                             <div class="card-img">
-                                <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                <img src="{{asset('img/Rorschach_01_C.jpg')}}" class="img-fluid sli" >
                             </div>
                             <div class="card-img-overlay">Slide 6</div>
                         </div>
@@ -103,8 +143,7 @@
             </a>
         </div>
     </div>
-    <h5 class="mt-2 fw-light">advances one slide at a time</h5>
 </div>
-
+</div>
 
 {% endblock %}
